@@ -2053,6 +2053,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'Sidebar'
 });
@@ -2077,7 +2085,6 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-//
 //
 //
 //
@@ -2495,6 +2502,16 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_3__.default({
    * Admin routes
    */
   {
+    path: "/subscriber",
+    name: "Subscription",
+    component: function component() {
+      return __webpack_require__.e(/*! import() */ "resources_js_views_Subscriptions_Subscribers_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Subscriptions/Subscribers.vue */ "./resources/js/views/Subscriptions/Subscribers.vue"));
+    },
+    meta: {
+      requiresAuth: true,
+      layout: _views_admin_layout_index__WEBPACK_IMPORTED_MODULE_1__.default
+    }
+  }, {
     path: "/admin",
     name: "admin",
     component: function component() {
@@ -77042,8 +77059,7 @@ var render = function() {
   return _c(
     "ul",
     {
-      staticClass:
-        "navbar-nav bg-gradient-primary sidebar sidebar-dark accordion",
+      staticClass: "navbar-nav bg-light border-right fixed sidebar accordion",
       attrs: { id: "accordionSidebar" }
     },
     [
@@ -77055,8 +77071,8 @@ var render = function() {
           attrs: { to: "/" }
         },
         [
-          _c("div", { staticClass: "sidebar-brand-icon rotate-n-15" }, [
-            _c("i", { staticClass: "fas fa-laugh-wink" })
+          _c("div", { staticClass: "sidebar-brand-icon" }, [
+            _c("img", { attrs: { src: "", alt: "logo" } })
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "sidebar-brand-text mx-3" }, [
@@ -77088,8 +77104,10 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "sidebar-heading" }, [_vm._v("MENUS")]),
       _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
       _c("li", { staticClass: "nav-item" }, [
-        _vm._m(0),
+        _vm._m(1),
         _vm._v(" "),
         _c(
           "div",
@@ -77130,12 +77148,28 @@ var render = function() {
       _vm._v(" "),
       _c("hr", { staticClass: "sidebar-divider" }),
       _vm._v(" "),
-      _vm._m(1)
+      _vm._m(2)
     ],
     1
   )
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "nav-item" }, [
+      _c(
+        "a",
+        { staticClass: "nav-link collapsed", attrs: { href: "/Subscriber" } },
+        [
+          _c("i", { staticClass: "fas fa-fw fa-users  " }),
+          _vm._v(" "),
+          _c("span", [_vm._v("Subscribers")])
+        ]
+      )
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -77197,7 +77231,7 @@ var render = function() {
     "div",
     {
       staticClass:
-        "\n    navbar navbar-expand navbar-light\n    bg-white\n    topbar\n    mb-4\n    static-top\n    shadow\n  "
+        "\n    navbar navbar-expand navbar-light\n    topbar\n    mb-4\n    static-top\n    border-bottom\n  "
     },
     [
       _vm._m(0),
@@ -77481,7 +77515,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("footer", { staticClass: "sticky-footer bg-white" }, [
+    return _c("footer", { staticClass: "sticky-footer bg-light border-top" }, [
       _c("div", { staticClass: "container my-auto" }, [
         _c("div", { staticClass: "copyright text-center my-auto" }, [
           _c("span", [
@@ -94217,7 +94251,7 @@ var index = {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_views_home_index_vue":1,"resources_js_views_login_index_vue":1,"resources_js_views_register_index_vue":1,"resources_js_views_verify_index_vue":1,"resources_js_views_forgot_index_vue":1,"resources_js_views_reset_index_vue":1,"resources_js_views_admin_dashboard_vue":1,"resources_js_views_admin_buttons_vue":1,"resources_js_views_admin_cards_vue":1,"resources_js_views_admin_colors_vue":1,"resources_js_views_admin_borders_vue":1,"resources_js_views_admin_animations_vue":1,"resources_js_views_admin_other_vue":1,"resources_js_views_admin_page-not-found_vue":1,"resources_js_views_admin_blank_vue":1,"resources_js_views_admin_charts_vue":1,"resources_js_views_admin_tables_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_views_home_index_vue":1,"resources_js_views_login_index_vue":1,"resources_js_views_register_index_vue":1,"resources_js_views_verify_index_vue":1,"resources_js_views_forgot_index_vue":1,"resources_js_views_reset_index_vue":1,"resources_js_views_Subscriptions_Subscribers_vue":1,"resources_js_views_admin_dashboard_vue":1,"resources_js_views_admin_buttons_vue":1,"resources_js_views_admin_cards_vue":1,"resources_js_views_admin_colors_vue":1,"resources_js_views_admin_borders_vue":1,"resources_js_views_admin_animations_vue":1,"resources_js_views_admin_other_vue":1,"resources_js_views_admin_page-not-found_vue":1,"resources_js_views_admin_blank_vue":1,"resources_js_views_admin_charts_vue":1,"resources_js_views_admin_tables_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

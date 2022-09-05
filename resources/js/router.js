@@ -44,6 +44,15 @@ let router = new Router({
          * Admin routes
          */
         {
+        path: "/subscriber",
+        name: "Subscription",
+        component: () => import("./views/Subscriptions/Subscribers.vue"),
+        meta: {
+            requiresAuth: true,
+            layout: AdminLayout
+        }
+        },
+        {
             path: "/admin",
             name: "admin",
             component: () => import("./views/admin/dashboard.vue"),

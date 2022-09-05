@@ -1,6 +1,6 @@
 <template>
     <ul
-      class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
+      class="navbar-nav bg-light border-right fixed sidebar accordion"
       id="accordionSidebar"
     >
       <!-- Sidebar - Brand -->
@@ -8,8 +8,8 @@
         class="sidebar-brand d-flex align-items-center justify-content-center"
         to="/"
       >
-        <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
+        <div class="sidebar-brand-icon">
+          <img src="" alt="logo" />
         </div>
         <div class="sidebar-brand-text mx-3">Statsociety</div>
       </router-link>
@@ -30,7 +30,15 @@
 
       <!-- Heading -->
       <div class="sidebar-heading">MENUS</div>
-
+      <li class="nav-item">
+        <a
+          class="nav-link collapsed"
+          href="/Subscriber"
+        >
+          <i class="fas fa-fw fa-users  "></i>
+          <span>Subscribers</span>
+        </a>
+      </li>
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
         <a

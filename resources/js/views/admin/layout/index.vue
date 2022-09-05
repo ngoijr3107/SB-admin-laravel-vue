@@ -21,7 +21,7 @@
       <!-- End of Main Content -->
 
       <!-- Footer -->
-      <footer class="sticky-footer bg-white">
+      <footer class="sticky-footer bg-light border-top">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
             <span>Copyright &copy; <a href="https://statsociety.or.tz">Statsociety Organization.</a> 2022</span>
